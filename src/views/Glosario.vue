@@ -24,39 +24,69 @@ export default {
     return {
       glosarioData: [
         {
-          termino: 'ACID',
+          termino: 'Arduino',
           significado:
-            'Acrónimo de Atomicidad, Consistencia, Aislamiento y Durabilidad; propiedades que garantizan que las transacciones en una base de datos sean fiables.',
+            'Plataforma de hardware libre que facilita el desarrollo de proyectos de electrónica mediante el uso de microcontroladores y un entorno de programación accesible.',
         },
         {
-          termino: 'Algoritmo',
+          termino: 'Arranque de viruta',
           significado:
-            'Conjunto ordenado y finito de operaciones sistemáticas que permite hacer un cálculo y hallar la solución de un problema específico.',
+            'Proceso de fabricación en el que se elimina material de una pieza en bruto mediante corte para obtener la forma y dimensiones deseadas.',
         },
         {
-          termino: 'Base de datos',
+          termino: 'Circuito digital',
           significado:
-            'Sistema organizado para recopilar, almacenar y gestionar datos de manera estructurada y eficiente.',
+            'Sistema electrónico donde las señales representan datos en forma de 0 y 1 (binario), utilizado en computadoras y dispositivos digitales.',
         },
         {
-          termino: 'CRUD',
+          termino: 'Corriente alterna (AC)',
           significado:
-            '<i>Acrónimo de Create, Read, Update, Delete;</i> operaciones básicas que se pueden realizar sobre datos almacenados.',
+            'Tipo de corriente eléctrica que cambia de dirección de forma periódica, comúnmente usada en sistemas de distribución de electricidad doméstica e industrial.',
         },
         {
-          termino: '<i>Dataset</i>',
+          termino: 'Corriente directa (DC)',
           significado:
-            'Conjunto de datos organizados y formateados de manera específica para su uso en análisis o entrenamiento de modelos.',
+            'Corriente eléctrica que fluye en una sola dirección, generalmente utilizada en dispositivos electrónicos y sistemas de baterías.',
         },
         {
-          termino: 'Datos estructurados',
+          termino: 'Dibujo técnico',
           significado:
-            'Información que está organizada en un formato predefinido y fácilmente procesable por máquinas, típicamente en tablas con filas y columnas.',
+            'Representación gráfica de objetos y estructuras utilizando normas específicas para transmitir información clara y precisa en ingeniería y arquitectura.',
         },
         {
-          termino: 'ETL',
+          termino: 'Electrotecnia',
           significado:
-            '<i>Extract, Transform, Load </i>(Extraer, Transformar, Cargar); proceso que permite a las organizaciones mover datos desde múltiples fuentes, reformatearlos y limpiarlos, y cargarlos en otra base de datos.',
+            'Rama de la ingeniería que estudia la producción, distribución y uso de la electricidad y los dispositivos eléctricos.',
+        },
+        {
+          termino: 'Mecánica y ajuste',
+          significado:
+            'Conjunto de operaciones y procedimientos para ensamblar, reparar y calibrar piezas mecánicas en sistemas industriales o automotrices.',
+        },
+        {
+          termino: 'Procesos industriales',
+          significado:
+            'Métodos y técnicas empleados en la transformación de materias primas en productos finales mediante el uso de maquinaria y tecnología.',
+        },
+        {
+          termino: 'Semiconductor',
+          significado:
+            'Material que tiene propiedades de conductividad intermedia entre conductores y aislantes, fundamental en la fabricación de dispositivos electrónicos como transistores y diodos.',
+        },
+        {
+          termino: 'Simulación de circuitos',
+          significado:
+            'Herramienta que permite crear y probar circuitos electrónicos virtualmente para analizar su comportamiento antes de construirlos físicamente.',
+        },
+        {
+          termino: 'Tolerancia',
+          significado:
+            'Rango permisible de variación en las dimensiones de una pieza para asegurar el funcionamiento adecuado en el ensamblaje de componentes mecánicos.',
+        },
+        {
+          termino: 'Transistor',
+          significado:
+            'Componente electrónico que amplifica o conmutan señales electrónicas, siendo clave en circuitos digitales y analógicos.',
         },
       ],
     }

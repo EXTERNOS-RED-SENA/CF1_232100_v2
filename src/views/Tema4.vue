@@ -2,105 +2,270 @@
 .curso-main-container.pb-3
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
-    .titulo-principal.color-acento-contenido
+    .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 4
-      h1 Introducción a la Inteligencia Artificial
+      h1 Mecánica y ajuste
+    
+    .row
+      .col-lg(data-aos="fade-right")
+        p La maquinaria agrícola es la columna vertebral de la agricultura moderna. Desde tractores y cosechadoras hasta sistemas de riego e implementos especializados, estos equipos desempeñan un papel crítico en la producción de alimentos y materias primas esenciales para el mundo. Sin embargo, para que esta maquinaria funcione de manera eficaz y sin problemas, es imperativo comprender en profundidad su mecánica y cómo ajustar sus piezas de manera adecuada. 
+        .p-4(style="background-color:#98E2EC;border-radius:9px;")
+          p.mb-0  El presente apartado se presenta como herramienta conceptual esencial para agricultores, técnicos y entusiastas de la agricultura que desean profundizar en el mecanizado y ajuste de piezas. Se explorará a fondo los principios fundamentales de la mecánica aplicada y sobre el ajuste, mantenimiento y optimización de componentes para la fabricación de piezas.
+      .col-lg-auto.d-none.d-lg-block(data-aos="fade-left" style="place-self:center;")
+        figure
+          img(src="@/assets/curso/tema4/1.png")
+    
+    Separador
 
-    .row.justify-content-center.mb-5
-      .col-lg-9.my-lg-0.my-3
-        .bg15.p-4.h-100.j1
-          p.mb-0 La Inteligencia Artificial ha emergido como una de las tecnologías más transformadoras del siglo XXI, revolucionando la manera en que procesamos información y resolvemos problemas complejos. Este capítulo proporciona una visión general de los conceptos fundamentales de la IA, sus aplicaciones prácticas y las herramientas esenciales para su implementación.
+    .titulo-segundo(data-aos="flip-up")
+      h2#t_4_1 4.1	Fundamentos Teóricos
 
-      .col-lg-3.my-lg-0.my-3
-        img.img-a.img-t(src='@/assets/curso/temas/66.png', alt='') 
+    .cont_decorativo.mb-4.mt-5(data-aos="fade-right")
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/tema1/3.svg")
+        .col.ps-2(style="place-self:center;")
+          h3.mb-0.pe-4 Principios de mecánica aplicada a la maquinaria agrícola
 
-    Separador 
-    #t_4_1.titulo-segundo.color-acento-contenido
-      h2 4.1 Conceptos fundamentales de IA        
+    .row
+      .col-md-auto.d-none.d-md-block(data-aos="fade-right" style="place-self:center;")
+        figure
+          img(src="@/assets/curso/tema4/2.svg")
+      .col-md(data-aos="fade-left" style="place-self:center;")
+        p.mb-0 #[strong Mecánica en maquinaria agrícola:] La mecánica aplicada a la maquinaria agrícola es la disciplina que estudia los principios de funcionamiento de las máquinas utilizadas en el campo, tales como tractores, cosechadoras, sembradoras y arados. Estas máquinas están compuestas de componentes mecánicos esenciales, como ejes, engranajes, rodamientos, sistemas de transmisión y piezas móviles que requieren ajustes y mantenimientos periódicos para funcionar de manera óptima.
+    
+    .col-xl-8.m-auto.mt-5
+      .titulo-sexto.color-acento-contenido.mt-5(data-aos="fade-down")
+        h5 Tabla 6.
+        span Componentes mecánicos clave
+      .tabla-a.color-acento-botones(data-aos="fade-up")
+        table
+          caption.fw-normal Fuente: OIT, 2024.
+          thead(style="border:0;")
+            tr.text-center(style="background-color:#78B62E;")
+              th Imagen
+              th Componente
+              th Uso
+          tbody.text-center
+            tr(style="background-color:#F6F6F6;")
+              td(style="border:0;border-right:1px #AFAFAF solid;") 
+                figure
+                  img.d-inline(src="@/assets/curso/tema4/3.png" style="max-width:170px;")
+              td(style="border:0;border-right:1px #AFAFAF solid;") Ejes
+              td(style="border:0;border-right:1px #AFAFAF solid;") Transmiten el movimiento rotatorio desde el motor a otras partes de la máquina. Su correcta alineación y ajuste son esenciales para evitar el desgaste.
+            tr(style="background-color:#fff;")
+              td(style="border:0;border-right:1px #AFAFAF solid;") 
+                figure
+                  img.d-inline(src="@/assets/curso/tema4/4.png" style="max-width:170px;")
+              td(style="border:0;border-right:1px #AFAFAF solid;") Engranajes
+              td(style="border:0;border-right:1px #AFAFAF solid;")  Utilizados para cambiar la velocidad o el par de fuerza, los engranajes necesitan un ajuste preciso para evitar desajustes o deslizamientos.
+            tr(style="background-color:#F6F6F6;")
+              td(style="border:0;border-right:1px #AFAFAF solid;") 
+                figure
+                  img.d-inline(src="@/assets/curso/tema4/5.png" style="max-width:170px;")
+              td(style="border:0;border-right:1px #AFAFAF solid;") Rodamientos
+              td(style="border:0;border-right:1px #AFAFAF solid;") Facilitan el movimiento suave de componentes giratorios, como los ejes. Requieren de un monitoreo y ajuste constante para evitar daños por fricción excesiva.
+            tr(style="background-color:#fff;")
+              td(style="border:0;border-right:1px #AFAFAF solid;") 
+                figure
+                  img.d-inline(src="@/assets/curso/tema4/6.png" style="max-width:170px;")
+              td(style="border:0;border-right:1px #AFAFAF solid;") Discos de Arado
+              td(style="border:0;border-right:1px #AFAFAF solid;")  Estos son responsables de penetrar el suelo y girar la tierra para prepararla para la siembra. Su desgaste influye directamente en la eficiencia del trabajo agrícola, y necesitan ajustes frecuentes para mantener su efectividad.
+    
+    .cont_decorativo.mb-4.mt-5(data-aos="fade-right")
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/tema1/3.svg")
+        .col.ps-2(style="place-self:center;")
+          h3.mb-0.pe-4 Metrología y su importancia en el ajuste
 
-    .row.justify-content-center.mb-5
-      .col-lg-7.my-lg-0.my-3
-        p La Inteligencia Artificial representa uno de los avances más significativos en la historia de la computación, permitiendo a las máquinas emular ciertas capacidades cognitivas humanas. En su núcleo, la IA busca crear sistemas que puedan aprender de los datos, identificar patrones complejos y tomar decisiones con cierto grado de autonomía.
-        .bg6.p-4.j1.mb-4
-          p.mb-0 Por su parte, el aprendizaje automático (#[i #[b machine learning]]) es un subconjunto de la IA que se centra en desarrollar algoritmos que pueden mejorar automáticamente a través de la experiencia. A diferencia de la programación tradicional, donde las reglas se establecen explícitamente, en el aprendizaje automático los sistemas aprenden estas reglas a partir de los datos proporcionados.         
-        p Un concepto fundamental en IA es el de modelo, que bien se puede entender como una representación matemática de un proceso del mundo real. Los modelos de IA aprenden patrones en los datos de entrenamiento y utilizan este conocimiento para hacer predicciones o tomar decisiones sobre nuevos datos.
-      .col-lg-5.my-lg-0.my-3.j1
-        img.img-a.img-t(src='@/assets/curso/temas/67.png', alt='')  
+    p(data-aos="fade-left") La metrología es la ciencia de la medición y juega un rol fundamental en la precisión del ajuste de piezas. Una medición precisa permite el control de las tolerancias, lo cual asegura que los componentes encajen correctamente, evitando así el desgaste prematuro y fallos en las máquinas.
 
-    Separador 
-    #t_4_2.titulo-segundo.color-acento-contenido
-      h2 4.2 Aplicaciones y casos de uso
-    .row.justify-content-center.mb-5
-      .col-lg-5.my-lg-0.my-3
-        img.img-a.img-t(src='@/assets/curso/temas/68.png', alt='')       
-      .col-lg-7.my-lg-0.my-3
-        .bg4.p-4.h-100.j1
-          p Las aplicaciones de la IA son vastas y continúan expandiéndose a medida que la tecnología evoluciona. En el ámbito empresarial, la IA se utiliza para optimizar procesos, predecir tendencias de mercado y mejorar la experiencia del cliente. Los sistemas de recomendación, por ejemplo, utilizan IA para analizar el comportamiento de los usuarios y sugerir productos o contenido relevante.
+    .cont_1_1.mt-4.pt-4.pb-4.pb-xl-5.pt-xl-5
+      .tarjeta.bg-white.p-4.p-lg-5.pb-lg-4
+        CarouselRED(tipo="b")
+          .row.pt-lg-4.col-xl-11.m-auto
+            .col-lg-7.mb-4.mb-lg-0(style="place-self:center;")
+              h5 Instrumentos de medición comunes
+              ul.lista-ul.mb-0.mt-4.ps-4
+                li.d-flex.mb-3
+                  i.fas.fa-check-circle(style="color:#78B62E;")
+                  span #[strong Calibradores:] utilizados para medir dimensiones externas e internas con precisión. Los calibradores permiten tomar medidas de hasta milímetros o fracciones de milímetro.
+                li.d-flex.mb-3
+                  i.fas.fa-check-circle(style="color:#78B62E;")
+                  span #[strong Micrómetros:] ideales para medir dimensiones pequeñas con gran precisión, especialmente útiles para verificar el espesor y diámetro de piezas.
+                li.d-flex.mb-0
+                  i.fas.fa-check-circle(style="color:#78B62E;")
+                  span #[strong Indicadores de carátula o comparadores:] se utilizan para verificar alineaciones y concentricidades en componentes montados.
+            .col-lg-5
+              figure.m-auto.col-12.col-md-8.col-lg-12
+                img(src='@/assets/curso/tema4/7.png')
+          .row.pt-lg-4.col-xl-11.m-auto
+            .col-lg-7.mb-4.mb-lg-0(style="place-self:center;")
+              h5 Conceptos clave en metrología
+              ul.lista-ul.mb-0.mt-4.ps-4
+                li.d-flex.mb-3
+                  i.fas.fa-check-circle(style="color:#78B62E;")
+                  span #[strong Exactitud y precisión:] la exactitud se refiere a qué tan cerca está una medición del valor real, mientras que la precisión indica la consistencia en las mediciones repetidas.
+                li.d-flex.mb-3
+                  i.fas.fa-check-circle(style="color:#78B62E;")
+                  span #[strong Tolerancia:] margen de error permitido en las medidas. Para maquinaria agrícola, las tolerancias pueden variar según el tipo de componente y su función en la máquina.
+                li.d-flex.mb-0
+                  i.fas.fa-check-circle(style="color:#78B62E;")
+                  span #[strong Calibración:] proceso para garantizar que los instrumentos de medición ofrezcan resultados confiables comparándolos con patrones de referencia.
+            .col-lg-5
+              figure.m-auto.col-12.col-md-8.col-lg-12
+                img(src='@/assets/curso/tema4/8.png')
 
-          p.mb-0 Para comprender mejor cómo se desarrollan los proyectos de IA en la práctica, es útil examinar el flujo de trabajo típico que siguen estos proyectos, como se ilustra en la siguiente infografía. Este proceso iterativo comienza con la recolección de datos de diversas fuentes, seguido de una fase de preparación donde los datos se limpian y transforman. Posteriormente, se desarrolla la fase de entrenamiento donde los modelos aprenden de los datos procesados, y finalmente se llega a la etapa de evaluación y despliegue, donde se mide el rendimiento del modelo y se implementa en producción. 
+    .cont_decorativo.mb-4.mt-5(data-aos="fade-right")
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/tema1/3.svg")
+        .col.ps-2(style="place-self:center;")
+          h3.mb-0.pe-4 Procesos de mecanizado y ajuste
 
-    .row.justify-content-center.mb-5
-      .col-auto
-        .titulo-sexto.color-acento-contenido
-          h5 Figura 2.
-          span Flujo de trabajo en proyectos de inteligencia artificial
-        img.img-a.img-t.mb-2(src='@/assets/curso/temas/69.svg', alt='')       
-        figcaption Fuente. OIT, 2024.    
+    p(data-aos="fade-left") El mecanizado es un conjunto de procesos de fabricación en los cuales se utiliza una máquina-herramienta para dar forma y ajuste a una pieza. Existen distintos tipos de procesos de mecanizado utilizados para los ajustes, entre ellos:
 
-    .row.justify-content-center.mb-5
-      .col-lg-7.my-lg-0.my-3
-        .bg16.p-4.h-100.j1
-          p Cada etapa de este flujo presenta sus propios desafíos y requerimientos específicos. Por ejemplo, en la fase de recolección de datos se debe asegurar no solo la cantidad, sino también la calidad y representatividad de los datos. La fase de preparación suele ser la más intensiva en tiempo y recursos, ya que de ella depende en gran medida el éxito del modelo. Durante el entrenamiento, la selección del algoritmo adecuado y el ajuste de hiperparámetros son medulares, mientras que en la fase de evaluación y despliegue, el enfoque está en garantizar que el modelo funcione de manera confiable en un entorno de producción.
+    .row.mt-4
+      .col-lg(data-aos="fade-right")
+        .p-3.p-lg-4(style="background-color:#01B9D1;border-radius:5px;")
+          ul.lista-ul.mb-0
+            li.d-flex.bg-white.p-2(style="border-radius:4px;")
+              i.fas.fa-check-circle(style="color:#78B62E;")
+              span #[strong Torneado:] ideal para piezas cilíndricas, donde se controla el diámetro y la forma mediante el corte en un torno.
+            li.d-flex.bg-white.p-2(style="border-radius:4px;")
+              i.fas.fa-check-circle(style="color:#78B62E;")
+              span #[strong Fresado:] proceso para crear superficies planas o ranuras, utilizado comúnmente en la fabricación y ajuste de piezas de maquinaria.
+            li.d-flex.bg-white.p-2.mb-0(style="border-radius:4px;")
+              i.fas.fa-check-circle(style="color:#78B62E;")
+              span #[strong Taladrado:] proceso de perforación que permite realizar agujeros precisos en piezas, esencial para la colocación de pernos o ensamblajes.
+      .col-lg-auto.d-none.d-lg-block(data-aos="fade-left")
+        figure
+          img(src="@/assets/curso/tema4/9.png")
+    
+    .row.mt-4
+      .col-lg-auto.d-none.d-lg-block(data-aos="fade-right")
+        figure
+          img(src="@/assets/curso/tema4/10.png")
+      .col-lg(data-aos="fade-left")
+        p.fw-bold Parámetros de mecanizado relevantes
+        .p-3.p-lg-4(style="background-color:#01B9D1;border-radius:5px;")
+          ul.lista-ul.mb-0
+            li.d-flex.bg-white.p-2(style="border-radius:4px;")
+              i.fas.fa-check-circle(style="color:#78B62E;")
+              span #[strong Velocidad de corte:] se refiere a la rapidez con la que la herramienta de corte atraviesa la superficie de la pieza. Esta depende del tipo de material y de la herramienta utilizada.
+            li.d-flex.bg-white.p-2(style="border-radius:4px;")
+              i.fas.fa-check-circle(style="color:#78B62E;")
+              span #[strong Avance:] cantidad de material que la herramienta de corte elimina en cada pasada.
+            li.d-flex.bg-white.p-2.mb-0(style="border-radius:4px;")
+              i.fas.fa-check-circle(style="color:#78B62E;")
+              span #[strong Profundidad de corte:] influye en la cantidad de material que se elimina y afecta la precisión y acabado de la pieza.
 
-          p En el campo de la medicina, la IA está revolucionando el diagnóstico por imagen, al permitir la detección temprana de enfermedades mediante el análisis automatizado de radiografías, resonancias magnéticas y otros tipos de imágenes médicas. Los sistemas de IA también están ayudando en el descubrimiento de nuevos medicamentos, analizando grandes cantidades de datos genéticos y moleculares.
+    Separador
 
-          p.mb-0 La industria manufacturera está aprovechando la IA para implementar mantenimiento predictivo, donde los algoritmos pueden predecir cuándo una máquina necesitará mantenimiento antes de que ocurra una falla. Esto no solo reduce los costos de mantenimiento sino que también minimiza el tiempo de inactividad.  
-          
-      .col-lg-5.my-lg-0.my-3.j1
-        img.img-a.img-t(src='@/assets/curso/temas/70.png', alt='')             
+    .titulo-segundo(data-aos="flip-up")
+      h2#t_4_2 4.2	Identificación y diagnóstico de componentes mecánicos
 
-    Separador 
-    #t_4_3.titulo-segundo.color-acento-contenido
-      h2 4.3 Herramientas básicas para IA
-    .row.justify-content-center.mb-5
-      .col-lg-4.my-lg-0.my-3
-        img.img-a.img-t(src='@/assets/curso/temas/71.png', alt='')       
-      .col-lg-8.my-lg-0.my-3
-        p El desarrollo de soluciones de IA requiere un conjunto específico de herramientas y tecnologías. Python se ha convertido en el lenguaje de programación dominante en este campo, gracias a su simplicidad y a la rica ecosistema de bibliotecas especializadas. Entre las bibliotecas más importantes encontramos:
-        .bg6.p-4
-          ul.lista-ul.fa-ul.mb-0
-            li 
-              i.fas.fa-check-circle.color1
-              span Scikit-learn para aprendizaje automático tradicional.
+    .cont_decorativo.mb-4.mt-5(data-aos="fade-right")
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/tema1/3.svg")
+        .col.ps-2(style="place-self:center;")
+          h3.mb-0.pe-4 Inspección y diagnóstico de piezas
+    
+    p(data-aos="fade-left") La identificación y diagnóstico de componentes mecánicos son fundamentales para detectar problemas antes de que se conviertan en fallos mayores. Un diagnóstico detallado comienza con la selección de una pieza específica, como un eje o un disco de arado, que muestra signos de desgaste o daños.
 
-            li 
-              i.fas.fa-check-circle.color1
-              span TensorFlow y PyTorch para aprendizaje profundo.
+    .row.mt-4
+      .col-lg(data-aos="fade-right")
+        AccordionRED(tipo="a" clase-tarjeta="tarjeta")
+          .row.col-xl-11.m-auto(titulo="Inspección visual")
+            p Se revisan aspectos como desgaste, fisuras, corrosión o cualquier desalineación evidente. Estas inspecciones ayudan a identificar problemas a tiempo, evitando reparaciones mayores.
+          .row.col-xl-11.m-auto(titulo="Mediciones de precisión")
+            p Utilizando herramientas como calibradores y micrómetros, se toman mediciones de la pieza y se comparan con las especificaciones del fabricante. Esto permite saber si la pieza aún cumple con las tolerancias permitidas.
+        .p-4.mt-3.text-white(style="background-color:#294B6D;border-radius:11px;")
+          h5 Ejemplo práctico de diagnóstico
+          p.mb-0 #[strong Selección de un eje de transmisión en un tractor:] se inspecciona visualmente el estado exterior e interior del eje, verificando alineación, desgaste en los rodamientos y posibles fracturas o grietas. Las mediciones de diámetro se comparan con el estándar para evaluar la necesidad de ajustes.
+      .col-lg-auto.d-none.d-lg-block(data-aos="fade-left")
+        figure
+          img(src="@/assets/curso/tema4/11.png")
 
-            li 
-              i.fas.fa-check-circle.color1
-              span Pandas para manipulación y análisis de datos.
+    Separador
 
-            li 
-              i.fas.fa-check-circle.color1
-              span NumPy para computación numérica.
+    .titulo-segundo(data-aos="flip-up")
+      h2#t_4_3 4.3	Técnicas de Mecanizado para Ajuste
 
-            li.mb-0 
-              i.fas.fa-check-circle.color1
-              span.mb-0 Matplotlib y Seaborn para visualización de datos.                
+    .cont_decorativo.mb-4.mt-5(data-aos="fade-right")
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/tema1/3.svg")
+        .col.ps-2(style="place-self:center;")
+          h3.mb-0.pe-4 Aplicación de métodos de mecanizado
+    
+    .row.mt-4
+      .col-lg(data-aos="fade-right")
+        AccordionRED(tipo="a" clase-tarjeta="tarjeta")
+          .row.col-xl-11.m-auto(titulo="Torneado")
+            p Es uno de los procesos más utilizados para dar forma a piezas cilíndricas. En el torno, la pieza gira y la herramienta de corte elimina material para conseguir el diámetro y acabado necesarios.
+          .row.col-xl-11.m-auto(titulo="Fresado")
+            p Útil para piezas planas o ranuradas, el fresado elimina material mediante una fresa giratoria que se mueve sobre la superficie de la pieza.
+          .row.col-xl-11.m-auto(titulo="Taladrado y refrentado")
+            p Son técnicas usadas para crear orificios precisos y preparar superficies planas. El refrentado permite obtener un acabado superficial liso en los bordes de las piezas.
+        .p-4.mt-3.text-white(style="background-color:#294B6D;border-radius:11px;")
+          h5 Ejemplo práctico de mecanizado en ajustes
+          p.mb-0 #[strong Ajuste de una cuchilla de arado:] Primero, se mide la longitud y el grosor de la cuchilla con un micrómetro para determinar su desgaste. Luego, se aplica el proceso de fresado para restaurar su borde y asegurar una mayor penetración en el suelo. Finalmente, se vuelve a medir la pieza para asegurar que cumple con las especificaciones necesarias.
+      .col-lg-auto.d-none.d-lg-block(data-aos="fade-left")
+        figure
+          img(src="@/assets/curso/tema4/12.png")
 
-    p La elección de las herramientas adecuadas dependerá de varios factores, incluyendo la naturaleza del problema a resolver, el volumen de datos a procesar, y los requisitos de rendimiento del sistema. Es importante mencionar que las herramientas son solo un medio para un fin: el verdadero valor radica en comprender los principios subyacentes y saber cuándo y cómo aplicar cada técnica.
+    .cont_decorativo.mb-4.mt-5(data-aos="fade-right")
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/tema1/3.svg")
+        .col.ps-2(style="place-self:center;")
+          h3.mb-0.pe-4 Procedimientos de ajuste y pruebas de tolerancia
+    
+    TabsC.color-acento-contenido
+      .py-3.py-md-4(titulo="Tolerancias y ajustes en el mecanizado")
+        .row.p-4.col-xl-11.m-auto
+          .col-md-auto.mb-4.mb-md-0.col-7.m-auto
+            figure
+              img(src='@/assets/curso/tema4/13.svg')
+          .col-md
+            p.fw-bold Tolerancias y ajustes en el mecanizado
+            p.mb-0 Las tolerancias son márgenes de error permitidos en las dimensiones de una pieza. En maquinaria agrícola, las tolerancias deben ser precisas para asegurar que las piezas puedan montarse sin juego excesivo ni tensión indebida.
+      .py-3.py-md-4(titulo="Métodos de ajuste")
+        .row.p-4.col-xl-11.m-auto
+          .col-md-auto.mb-4.mb-md-0.col-7.m-auto
+            figure
+              img(src='@/assets/curso/tema4/14.svg')
+          .col-md
+            p.fw-bold Métodos de ajuste
+            p.mb-0 Existen distintos métodos para ajustar las tolerancias en el mecanizado, como el ajuste por rozamiento, el ajuste deslizante y el ajuste de interferencia. Estos métodos se eligen en función del tipo de pieza y de su aplicación en la maquinaria.
+      .py-3.py-md-4(titulo="Pruebas de precisión y documentación del ajuste")
+        .row.p-4.col-xl-11.m-auto
+          .col-md-auto.mb-4.mb-md-0.col-7.m-auto
+            figure
+              img(src='@/assets/curso/tema4/15.svg')
+          .col-md
+            p.fw-bold Pruebas de precisión y documentación del ajuste
+            p.mb-0 Después del mecanizado, se realizan pruebas de precisión para asegurar que la pieza ajustada cumpla con los estándares requeridos. Estas pruebas incluyen el uso de indicadores de carátula para verificar alineaciones y comparadores para confirmar la concentricidad.
+      .py-3.py-md-4(titulo="Registro del proceso de ajuste")
+        .row.p-4.col-xl-11.m-auto
+          .col-md-auto.mb-4.mb-md-0.col-7.m-auto
+            figure
+              img(src='@/assets/curso/tema4/16.svg')
+          .col-md
+            p.fw-bold Registro del proceso de ajuste
+            p.mb-0 La documentación de los hallazgos y ajustes realizados es fundamental para asegurar un historial de mantenimiento de cada pieza, lo cual facilita futuros ajustes y verificaciones.
 
-    .row.justify-content-center
-      .col-lg-5.my-lg-0.my-3
-        .bg14.brad.p-2.px-3.h-100.j1 
-          p.mb-0 El futuro de la IA promete ser aún más emocionante, con avances en áreas como el aprendizaje por refuerzo, la IA explicable y los sistemas de IA más eficientes en términos de recursos computacionales. Sin embargo, también debemos ser conscientes de los desafíos éticos y de privacidad que surgen con el uso cada vez más generalizado de la IA.
-      .col-lg-3.my-lg-0.my-3.j1
-        img.img-a.img-t(src='@/assets/curso/temas/72.png', alt='')      
-      .col-lg-4.my-lg-0.my-3
-        .p-3.h-100.j1 
-          p.mb-0 La implementación exitosa de soluciones de IA requiere no solo conocimientos técnicos, sino también una comprensión profunda del dominio del problema y consideraciones éticas sólidas. A medida que la tecnología continúa evolucionando, la capacidad de adaptarse y aprender nuevas herramientas y técnicas será cada vez más importante para quienes se desempeñan en este campo.     
+  
 
 </template>
 

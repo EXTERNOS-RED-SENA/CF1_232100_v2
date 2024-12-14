@@ -15,92 +15,101 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Fundamentos de datos y estructuras',
+        titulo: 'Introducción la electrotecnia',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Conceptos básicos de datos y análisis',
+            titulo: 'Electrotecnia DC',
             hash: 't_1_1',
           },
           {
             numero: '1.2',
-            titulo: 'Técnicas de modelado de datos',
+            titulo: 'Electrotecnia AC',
             hash: 't_1_2',
-          },
-          {
-            numero: '1.3',
-            titulo: 'Estructuras de datos fundamentales',
-            hash: 't_1_3',
           },
         ],
       },
-
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Calidad y tratamiento de datos',
+        titulo: 'Electrónica digital y sistemas embebidos',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '2.1',
-            titulo: 'Características de calidad de datos',
+            titulo: 'Fundamentos teóricos a la electrónica digital',
             hash: 't_2_1',
           },
           {
             numero: '2.2',
-            titulo: 'Técnicas de extracción y filtrado',
+            titulo: 'Definición de sistema embebido',
             hash: 't_2_2',
           },
           {
             numero: '2.3',
-            titulo: 'Transformación e integración de datos',
+            titulo: 'Lenguajes de programación y entornos de desarrollo',
             hash: 't_2_3',
+          },
+          {
+            numero: '2.4',
+            titulo: 'Aplicaciones prácticas',
+            hash: 't_2_4',
           },
         ],
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Gestión de bases de datos	8',
+        titulo: 'Dibujo Técnico',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '3.1',
-            titulo: 'Bases de datos relacionales y no relacionales',
+            titulo: 'Dibujo artístico Vs. Dibujo técnico',
             hash: 't_3_1',
           },
           {
             numero: '3.2',
-            titulo: 'Operaciones CRUD y consultas básicas',
+            titulo: 'Instrumentos y manejo en el dibujo técnico',
             hash: 't_3_2',
           },
           {
             numero: '3.3',
-            titulo: 'Gestión y optimización de bases de datos',
+            titulo: 'Nociones de geometría plana',
             hash: 't_3_3',
+          },
+          {
+            numero: '3.4',
+            titulo: 'Tipos de vistas y proyecciones',
+            hash: 't_3_4',
+          },
+          {
+            numero: '3.5',
+            titulo: 'Interpretación de formas, acotado y lectura de planos',
+            hash: 't_3_5',
           },
         ],
       },
       {
         nombreRuta: 'tema4',
         numero: '4',
-        titulo: 'Introducción a la Inteligencia Artificial',
+        titulo: 'Mecánica y ajuste',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '4.1',
-            titulo: 'Conceptos fundamentales de IA',
+            titulo: 'Fundamentos Teóricos',
             hash: 't_4_1',
           },
           {
             numero: '4.2',
-            titulo: 'Aplicaciones y casos de uso',
+            titulo: 'Identificación y diagnóstico de componentes mecánicos',
             hash: 't_4_2',
           },
           {
             numero: '4.3',
-            titulo: 'Herramientas básicas para IA',
+            titulo: 'Técnicas de Mecanizado para Ajuste',
             hash: 't_4_3',
           },
         ],
@@ -108,8 +117,30 @@ export default {
       {
         nombreRuta: 'tema5',
         numero: '5',
-        titulo: 'Conclusiones',
+        titulo: 'Herramientas y Sistema de Montajes',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '5.1',
+            titulo: 'Fundamentos teóricos de las herramientas de montaje',
+            hash: 't_5_1',
+          },
+          {
+            numero: '5.2',
+            titulo: 'Sistemas de montaje',
+            hash: 't_5_2',
+          },
+          {
+            numero: '5.3',
+            titulo: 'Procedimientos de montaje y ajuste',
+            hash: 't_5_3',
+          },
+          {
+            numero: '5.4',
+            titulo: 'Seguridad y mantenimiento de herramientas',
+            hash: 't_5_4',
+          },
+        ],
       },
     ],
     subMenu: [
@@ -159,11 +190,24 @@ export default {
   },
   global: {
     Name:
-      'Modelamiento y gestión de datos para modelos de inteligencia artificial',
+      'Fundamentos en tecnología aplicada en sistemas electromecánicos e industriales',
     Description:
-      'Este componente ofrece una introducción comprehensiva al modelamiento y gestión de datos para sistemas de inteligencia artificial. Abarca los fundamentos de estructuras de datos, técnicas de calidad y tratamiento, sistemas de gestión de bases de datos y conceptos básicos de IA. Proporciona las bases teóricas necesarias para comprender cómo los datos se transforman en información valiosa para modelos de IA.',
-    imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.png'),
+      'El componente brinda formación integral en desarrollo, análisis y monitoreo de sistemas productivos. Abarca áreas clave como electrotecnia DC, electrónica digital, sistemas Embebidos, dibujo técnico y caracterización de variables en procesos. Prepara a principiantes y técnicos para enfrentar los desafíos técnicos de la industria con visión analítica y operativa.',
+    imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
-    imagenesDecorativasBanner: [],
+    imagenesDecorativasBanner: [
+      {
+        clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-1.png'),
+      },
+      {
+        clases: ['banner-principal-decorativo-2'],
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.png'),
+      },
+      {
+        clases: ['banner-principal-decorativo-3'],
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-3.png'),
+      },
+    ],
   },
 }

@@ -2,320 +2,359 @@
 .curso-main-container.pb-3
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
-    .titulo-principal.color-acento-contenido
+    .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 1
-      h1 Fundamentos de datos y estructuras
-      
-    .bloque-texto-g.color-secundario.p-3.p-sm-4.p-md-5
-      .bloque-texto-g__img(
-        :style="{'background-image': `url(${require('@/assets/curso/temas/3.png')})`}"
-      )
-      .bloque-texto-g__texto.p-4
-        p.mb-0 En el contexto actual de la revolución digital, comprender los fundamentos de datos y estructuras se ha vuelto esencial para cualquier persona que se desempeñe en el campo de la tecnología. Este capítulo explora los conceptos básicos que fundamentan el trabajo con datos, desde su naturaleza más elemental hasta las estructuras complejas que permiten su organización y manipulación eficiente.
+      h1 Introducción la electrotecnia
+    
+    .row
+      .col-lg-5.mb-4.mb-lg-0(data-aos="zoom-in")
+        p.mb-0 En este capítulo inicial, se introduce el concepto fundamental de electrotecnia, el cual estudia los fundamentos teóricos de los tipos de corriente y sus aplicaciones prácticas (la transmisión de energía, la electrónica de potencia, el control de motores y sistemas de automatización). Así mismo, se darán a conocer las propiedades, ventajas y limitaciones de DC y AC, lo que resulta  clave para seleccionar y diseñar soluciones energéticas eficientes, seguras y adecuadas a cada tipo de aplicación. 
+      .col-lg-3.d-none.d-lg-block(data-aos="fade-up")
+        figure
+          img(src="@/assets/curso/tema1/1.png")
+      .col-lg-4(data-aos="zoom-in")
+        .h-100.p-4(style="background-color:#D7E1EB;border-radius:20px;")
+          p.mb-0 La electrotecnia es la disciplina que estudia el comportamiento de la electricidad y sus aplicaciones prácticas. La electricidad se presenta principalmente en dos formas: corriente continua (DC) y corriente alterna (AC). En los sistemas DC, la corriente fluye en una sola dirección, mientras que en los sistemas AC, la corriente cambia de dirección en ciclos regulares.
+    
+    Separador
 
-    Separador 
-    #t_1_1.titulo-segundo.color-acento-contenido
-      h2 1.1 Conceptos básicos de datos y análisis   
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-9.my-lg-0.my-3
-        p En el mundo actual, los datos se han convertido en el activo más valioso para las organizaciones y la base fundamental para el desarrollo de modelos de inteligencia artificial. Pero ¿qué son realmente los datos? En su forma más básica, los datos son representaciones de hechos, observaciones o mediciones que, por sí solos, carecen de contexto o significado. Es a través del análisis y la transformación que estos datos en bruto se convierten en información valiosa que permite tomar decisiones informadas.
-        .row.justify-content-center.align-items-center.bg3.p-0
-          .col-lg-5.my-lg-0.my-3.p-0
-            img.img-mov(src='@/assets/curso/temas/4.png', alt='')         
-          .col-lg-7.my-lg-0.my-3
-            .p-4.j1
-              p Cuando se analizan los datos en el contexto de la inteligencia artificial, se debe considerar que estos pueden presentarse de diversas formas. Los datos cuantitativos son aquellos que se pueden medir y expresar numéricamente. Ejemplos incluyen la temperatura diaria de una ciudad, el precio de un producto o el número de usuarios que visitan un sitio web. Estos datos permiten realizar cálculos matemáticos y análisis estadísticos precisos.
+    .titulo-segundo(data-aos="flip-up")
+      h2#t_1_1 1.1	Electrotecnia DC
+    
+    p(data-aos="fade-right") La electrotecnia es la rama de la ingeniería que se ocupa del estudio de los principios de la electricidad, su generación, transmisión y distribución, y sus aplicaciones en dispositivos y sistemas. Dentro de la electrotecnia, encontramos la corriente continua (DC) y la corriente alterna (AC) como los dos tipos principales de corriente eléctrica utilizados en distintos contextos.
 
-              p.mb-0 Por otro lado, los datos cualitativos describen características o cualidades que no pueden medirse numéricamente. Las opiniones de los clientes sobre un servicio, los colores preferidos en un estudio de mercado, o las respuestas a preguntas abiertas en una encuesta son ejemplos de datos cualitativos. Aunque estos datos no son numéricos por naturaleza, son igualmente valiosos y pueden transformarse en información cuantificable mediante técnicas de procesamiento adecuadas.
+    .row.mt-4
+      .col-lg(data-aos="fade-right")
+        AccordionRED(tipo="a" clase-tarjeta="tarjeta")
+          .row.col-xl-11.m-auto(titulo="Corriente continua (DC)")
+            p Flujo de electrones que se desplaza en una sola dirección a través de un circuito. En la corriente continua el flujo es constante y unidireccional, por tanto, el voltaje (potencial eléctrico) también es constante y no cambia de polaridad.
+          .row.col-xl-11.m-auto(titulo="Voltaje (V)")
+            p Diferencia de potencial, es la fuerza que impulsa el flujo de electrones en un circuito. En un sistema de corriente continua, el voltaje es constante. El voltaje se mide en voltios (V) y puede entenderse como la “presión” que empuja a los electrones a través de un conductor.
+          .row.col-xl-11.m-auto(titulo="Corriente (I)")
+            p Flujo de electrones que circula por un circuito. En sistemas de corriente continua, esta corriente se mantiene en una sola dirección, y su magnitud depende del voltaje aplicado y la resistencia del circuito. La corriente se mide en amperios (A).
+          .row.col-xl-11.m-auto(titulo="Resistencia (R)")
+            p Es la oposición al flujo de corriente dentro de un conductor y se mide en ohmios (Ω). En electrotecnia DC, la Ley de Ohm (V = I × R) es fundamental para calcular la relación entre voltaje, corriente y resistencia en un circuito.
+          .row.col-xl-11.m-auto(titulo="Potencia Eléctrica (P)")
+            p Cantidad de energía consumida o generada en un sistema por unidad de tiempo. En sistemas DC, la potencia se calcula como P = V × I y se mide en vatios (W). La potencia en corriente continua es constante, ya que tanto el voltaje como la corriente son constantes.
+      .col-lg-auto.d-none.d-lg-block(data-aos="fade-left")
+        figure
+          img(src="@/assets/curso/tema1/2.png")
+    
+    .cont_decorativo.mb-4.mt-5(data-aos="fade-right")
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/tema1/3.svg")
+        .col.ps-2(style="place-self:center;")
+          h3.mb-0.pe-4 Leyes fundamentales en electrotecnia DC 
+    
+    p(data-aos="fade-right") Se consideran así porque describen los principios básicos y las relaciones matemáticas necesarias para comprender y analizar cualquier circuito eléctrico que funcione con corriente continua. Estas leyes establecen las bases para el estudio de los circuitos y permiten predecir el comportamiento de la corriente y el voltaje en sistemas eléctricos simples y complejos. Estas leyes permiten analizar circuitos complejos, facilitando el cálculo de voltajes y corrientes en distintos puntos de un circuito.
 
-      .col-lg-3.my-lg-0.my-3
-        img.img-a.img-t(src='@/assets/curso/temas/5.png', alt='')                      
+    .cont_1_1.mt-5.pt-4.pb-4.pb-xl-5.pt-xl-5
+      .tarjeta.bg-white.p-4.p-lg-5.pb-lg-4
+        CarouselRED(tipo="b")
+          .row.pt-lg-4.col-xl-11.m-auto
+            .col-lg-7.mb-4.mb-lg-0(style="place-self:center;")
+              p.fw-bold Ley de Ohm
+              p La Ley de Ohm describe la relación entre el voltaje (V), la corriente (I) y la resistencia (R) en un circuito:
+              p.mt-4.fw-bold #[em V=I×R]
+              p Esta ley es esencial para el análisis de circuitos DC, ya que permite calcular cualquiera de estas tres variables cuando se conocen las otras dos.
+            .col-lg-5
+              figure.m-auto.col-12.col-md-8.col-lg-12
+                img(src='@/assets/curso/tema1/5.svg')
+          .row.pt-lg-4.col-xl-11.m-auto
+            .col-lg-7.mb-4.mb-lg-0(style="place-self:center;")
+              p.fw-bold Leyes de Kirchhoff 
+              p Las Leyes de Kirchhoff son dos principios fundamentales para el análisis de circuitos eléctricos:
+              ul.lista-ul.ps-4
+                li.d-flex
+                  i.fas.fa-check-circle(style="color:#78B62E;")
+                  span #[strong Ley de Kirchhoff de Corrientes (LKC):] La suma de las corrientes que entran en un nodo es igual a la suma de las corrientes que salen de él.
+                li.d-flex
+                  i.fas.fa-check-circle(style="color:#78B62E;")
+                  span #[strong Ley de Kirchhoff de Voltajes (LKV):] La suma de las diferencias de potencial alrededor de un lazo cerrado es igual a cero.
+            .col-lg-5
+              figure.m-auto.col-12.col-md-8.col-lg-12
+                img(src='@/assets/curso/tema1/6.png')
 
+    .cont_decorativo.mb-4.mt-5(data-aos="fade-right")
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/tema1/3.svg")
+        .col.ps-2(style="place-self:center;")
+          h3.mb-0.pe-4 Aportes de la electrotecnia DC
+    
+    p(data-aos="fade-right") La electrotecnia DC ha sido esencial para el desarrollo de la electrónica y la ingeniería eléctrica. A continuación, algunos de sus principales aportes:
 
-    .row.justify-content-start.mb-5
-      .col-auto
-        .list
-          .list__item
-            .list__item__icon
-              img.ms-2(src='@/assets/curso/temas/icon.svg' alt='')
-          .list__txt.bgicon.brad.p-0.px-4.text-white
-            h4.mb-0 Fundamentos de los datos y su análisis en inteligencia artificial 
+    .row.mt-4
+      .col-lg-auto.d-none.d-lg-block(data-aos="fade-right")
+        figure
+          img(src="@/assets/curso/tema1/7.png")
+      .col-lg(data-aos="fade-left")
+        AccordionRED(tipo="a" clase-tarjeta="tarjeta")
+          .row.col-xl-11.m-auto(titulo="Desarrollo de sistemas de alimentación de bajo voltaje")
+            p La corriente continua es esencial para dispositivos electrónicos como computadoras, teléfonos móviles y sistemas de comunicación, que operan a bajo voltaje.
+          .row.col-xl-11.m-auto(titulo="Avances en almacenamiento de energía")
+            p Las baterías, bancos de capacitores y otros dispositivos de almacenamiento de energía funcionan con corriente continua, lo que permite la portabilidad y autonomía de muchos dispositivos.
+          .row.col-xl-11.m-auto(titulo="Creación de fuentes de energía sostenibles")
+            p Paneles solares y otros dispositivos de generación de energía sostenible producen corriente continua, contribuyendo a la transición hacia fuentes de energía limpias.
+          .row.col-xl-11.m-auto(titulo="Fundamentos para el diseño de circuitos electrónicos")
+            p La teoría de la electrotecnia DC es la base para el diseño de circuitos digitales y de sistemas electrónicos complejos.
+    
+    .cont_decorativo.mb-4.mt-5(data-aos="fade-right")
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/tema1/3.svg")
+        .col.ps-2(style="place-self:center;")
+          h3.mb-0.pe-4 Aplicaciones de la electrotecnia DC
+    
+    p(data-aos="fade-right") La corriente continua tiene múltiples aplicaciones en distintos sectores debido a su estabilidad y facilidad de control. Algunas de las aplicaciones más comunes son:
 
-    .row.bg9.align-items-center
-      .col-lg-12.col-12.px-lg-5.px-4
-        .row.justify-content-center.align-items-center          
-          .col-lg-12
-            .bgw.brad.p-5.my-5
-              CarouselRED(tipo="b")
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 Introducción al análisis de datos  
-                    p Los datos son representaciones de hechos, observaciones o mediciones que requieren análisis para convertirse en información útil. En inteligencia artificial, los datos se usan para entrenar algoritmos y hacer predicciones.
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/7.png', alt='')   
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 ¿Qué son los datos? 
-                    p Los datos son hechos u observaciones sin contexto. A través del análisis, se transforman en información significativa que guía decisiones en múltiples campos. 
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/8.png', alt='')   
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 Datos cuantitativos: definición y ejemplos  
-                    p Los datos cuantitativos son numéricos y medibles. Ejemplos:
-                    ul.lista-ul.fa-ul
-                      li 
-                        i.fas.fa-check-circle.color1
-                        span Temperatura diaria
-                      li 
-                        i.fas.fa-check-circle.color1
-                        span Precio de productos
-                      li 
-                        i.fas.fa-check-circle.color1
-                        span Número de usuarios en un sitio web
-
-                    p Permiten cálculos y análisis estadísticos.                                             
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/9.png', alt='')   
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 Datos cualitativos: definición y ejemplos 
-                    p Los datos cualitativos describen características no numéricas. Ejemplos:
-                    ul.lista-ul.fa-ul
-                      li 
-                        i.fas.fa-check-circle.color1
-                        span Opiniones de clientes
-                      li 
-                        i.fas.fa-check-circle.color1
-                        span Colores preferidos en encuestas
-                      li 
-                        i.fas.fa-check-circle.color1
-                        span Respuestas abiertas 
-                    p Son útiles para obtener contexto y enriquecer el análisis.
-
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/10.png', alt='')   
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 Diferencias clave entre datos cuantitativos y cualitativos  
-                    ul.lista-ul.fa-ul
-                      li 
-                        i.fas.fa-check-circle.color1
-                        span #[b Cuantitativos:] son numéricos y se analizan matemáticamente.
-                      li 
-                        i.fas.fa-check-circle.color1
-                        span #[b Cualitativos:] son descriptivos y no numéricos. Capturan aspectos subjetivos.     
-                    p Ambos son cruciales para el análisis en inteligencia artificial.
-
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/11.png', alt='')   
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 Transformación de datos cualitativos a cuantitativos 
-                    p Los datos cualitativos se pueden convertir en datos cuantitativos mediante codificación o análisis de sentimiento. Ejemplo: una opinión positiva se transforma en un puntaje.
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/12.png', alt='')   
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 Aplicaciones en inteligencia artificial
-                    p Los datos cuantitativos permiten crear modelos predictivos, mientras que los cualitativos aportan contexto y comprensión emocional. Ambos tipos son necesarios para entrenar algoritmos en IA. 
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/13.png', alt='')   
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 Resumen 
-                    ul.lista-ul.fa-ul
-                      li 
-                        i.fas.fa-check-circle.color1
-                        span Cuantitativos: son numéricos, útiles para análisis matemáticos.
-                      li 
-                        i.fas.fa-check-circle.color1
-                        span Cualitativos: describen características y enriquecen el análisis contextual.   
-                    p Ambos son cruciales para el análisis en inteligencia artificial.
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/14.png', alt='')                                                            
-    Separador 
-    #t_1_2.titulo-segundo.color-acento-contenido
-      h2 1.2 Técnicas de modelado de datos
-
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-7.my-lg-0.my-3
-        p El modelado de datos es un proceso fundamental que permite crear una representación abstracta de cómo se relacionan y organizan los datos en un sistema. Imaginen que están construyendo una casa: antes de comenzar la construcción, necesitan planos detallados que muestren cómo se conectarán las diferentes habitaciones y qué función cumplirá cada espacio. De manera similar, el modelado de datos nos proporciona un “plano” de cómo se estructurará y fluirá la información en nuestros sistemas.
-
-        p El proceso de modelado comienza con una visión conceptual de alto nivel, donde se identifican las principales entidades o conceptos sobre los que se necesita almacenar información y cómo se relacionan entre sí. Por ejemplo, en un sistema de comercio electrónico, las entidades principales podrían ser “Cliente”, “Producto” y “Pedido”. Cada una de estas entidades tendrá sus propias características o atributos, y establecerá relaciones con otras entidades del sistema.
-
-      .col-lg-5.my-lg-0.my-3
-        img.img-a.img-t(src='@/assets/curso/temas/15.png', alt='')                                                                       
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-3.my-lg-0.my-3
-        img.img-a.img-t(src='@/assets/curso/temas/16.png', alt='')       
-      .col-lg-9.my-lg-0.my-3
-        .bg2.p-4
-          p.mb-0 A medida que se avanza en el modelado, se llega a un nivel más detallado en el que se define cómo se implementarán estas estructuras en los sistemas de almacenamiento de datos. En este punto, conceptos como la normalización cobran importancia, ya que permiten organizar los datos de manera eficiente y eliminar redundancias innecesarias.
-
-    Separador 
-    #t_1_3.titulo-segundo.color-acento-contenido
-      h2 1.3 Estructuras de datos fundamentales
-    .row.justify-content-center.mb-5
-      .col-lg-9.my-lg-0.my-3
-        p Las estructuras de datos son la columna vertebral de cualquier sistema de procesamiento de información. Son formas específicas de organizar y almacenar datos que nos permiten acceder a ellos y modificarlos de manera eficiente. La elección de la estructura de datos correcta puede tener un impacto significativo en el rendimiento de nuestros algoritmos de inteligencia artificial.
-
-        p Para comprender mejor las diferentes estructuras de datos y sus aplicaciones, consideremos la siguiente tabla comparativa:     
-      .col-lg-3.my-lg-0.my-3
-        img.img-a.img-t(src='@/assets/curso/temas/17.png', alt='')   
-
-    .row.justify-content-center
-      .col-lg-10
+    .row.mt-4
+      .col-lg(data-aos="fade-right")
+        .h-100.p-3.p-lg-4(style="background-color:#B0C4D7;border-radius:10px;")
+          ul.lista-ul.mb-0
+            li.d-flex.bg-white.p-2(style="border-radius:4px;")
+              i.fas.fa-check-circle(style="color:#78B62E;")
+              span #[strong Dispositivos electrónicos:] casi todos los dispositivos electrónicos de consumo, como teléfonos, laptops, cámaras, y relojes, funcionan con DC debido a la estabilidad y eficiencia de este tipo de corriente en sistemas de bajo voltaje.
+            li.d-flex.bg-white.p-2(style="border-radius:4px;")
+              i.fas.fa-check-circle(style="color:#78B62E;")
+              span #[strong Vehículos eléctricos:] los vehículos eléctricos (EVs) utilizan corriente continua para alimentar sus motores y otros sistemas electrónicos. Las baterías de estos vehículos almacenan y suministran energía en forma de DC, lo cual es esencial para su funcionamiento.
+            li.d-flex.bg-white.p-2.mb-0(style="border-radius:4px;")
+              i.fas.fa-check-circle(style="color:#78B62E;")
+              span #[strong Energía solar fotovoltaica:] los paneles solares generan energía en forma de corriente continua, que luego puede convertirse en AC mediante un inversor para su uso en sistemas domésticos o industriales.
+      .col-lg-auto.d-none.d-lg-block(data-aos="fade-left")
+        figure
+          img(src="@/assets/curso/tema1/8.png")
+    
+    .row.mt-4
+      .col-lg-auto.d-none.d-lg-block(data-aos="fade-right")
+        figure
+          img(src="@/assets/curso/tema1/9.png")
+      .col-lg(data-aos="fade-left")
+        .h-100.p-3.p-lg-4(style="background-color:#98E2EC;border-radius:10px;")
+          ul.lista-ul.mb-0
+            li.d-flex.bg-white.p-2(style="border-radius:4px;")
+              i.fas.fa-check-circle(style="color:#78B62E;")
+              span #[strong Almacenamiento de energía:] las baterías recargables y otros dispositivos de almacenamiento de energía, como bancos de energía (power banks), usan corriente continua tanto para su carga como para suministrar energía a dispositivos portátiles.
+            li.d-flex.bg-white.p-2(style="border-radius:4px;")
+              i.fas.fa-check-circle(style="color:#78B62E;")
+              span #[strong Sistemas de alimentación ininterrumpida (UPS):] los UPS almacenan energía en baterías (DC) para suministrar energía a equipos críticos, como servidores y sistemas médicos, en caso de un corte de electricidad.
+            li.d-flex.bg-white.p-2.mb-0(style="border-radius:4px;")
+              i.fas.fa-check-circle(style="color:#78B62E;")
+              span #[strong Electrónica automotriz:] los automóviles utilizan baterías de 12V DC para alimentar sistemas de iluminación, arranque, entretenimiento y otros componentes electrónicos en el vehículo.
+    
+    .row.mt-5
+      .col-lg-8(data-aos="fade-right")
         .titulo-sexto.color-acento-contenido
           h5 Tabla 1.
-          span Principales estructuras de datos, casos de uso y limitaciones.
-
-        .tabla-a.color-acento-botones.mb-5 
+          span  Ejemplos de circuitos electrotecnia DC
+        .p-3(style="background-color:#78B62E;")
+          p.mb-0.fw-bold Ejemplos de circuitos básicos en electrotecnia DC
+          p.mb-0 Se recomienda a los estudiantes trabajar con circuitos básicos en simuladores como #[em Tinkercad Circuits] o #[em Falstad Circuit Simulator], donde podrán explorar los siguientes ejemplos:
+        .tabla-a.color-acento-botones
           table
-            caption Fuente: OIT, 2024.
-            thead
-              tr
-                th Estructura
-                th Características principales
-                th Casos de uso ideales
-                th Limitaciones
-
+            caption.fw-normal Fuente: OIT, 2024.
             tbody
-              tr
-                td Arreglos
-                td Acceso directo a elementos, tamaño fijo
-                td Datos secuenciales, operaciones de búsqueda frecuentes
-                td Tamaño inmutable, inserción/eliminación costosa
-              tr
-                td Listas enlazadas
-                td Tamaño dinámico, inserción eficiente
-                td Datos que cambian frecuentemente
-                td Acceso secuencial
-              tr
-                td Árboles
-                td Organización jerárquica, búsqueda eficiente
-                td Datos jerárquicos, índices
-                td Complejidad de implementación
-              tr
-                td.fst-italic  Hash tables
-                td Búsqueda rápida por clave
-                td Cachés, diccionarios
-                td Colisiones, uso de memoria 
+              tr(style="background-color:#F6F6F6;")
+                td.text-center.fw-bold(style="width:30%;border-right:1px #AFAFAF solid;") Circuito serie
+                td(style="border:0;") Conecta varios resistores en serie y observa cómo la corriente es la misma en cada punto del circuito, mientras que el voltaje se reparte entre los resistores
+              tr(style="background-color:#fff;")
+                td.text-center.fw-bold(style="border-right:1px #AFAFAF solid;") Circuito paralelo
+                td(style="border:0;") Conecta varios resistores en paralelo para observar cómo el voltaje es el mismo en cada rama, pero la corriente se distribuye en función de la resistencia de cada rama.
+              tr(style="background-color:#F6F6F6;")
+                td.text-center.fw-bold(style="border-right:1px #AFAFAF solid;") Circuito mixto
+                td(style="border:0;") Conecta resistores en una combinación de serie y paralelo para experimentar con circuitos más complejos y aplicar la Ley de #[em Kirchhoff].
+      .col-lg-4.d-none.d-lg-block(data-aos="fade-left")
+        figure
+          img(src="@/assets/curso/tema1/10.png")
 
-    .row.justify-content-center.mb-5
-      .col-lg-3.my-lg-0.my-3
-        img.img-a.img-t(src='@/assets/curso/temas/18.png', alt='')       
-      .col-lg-9.my-lg-0.my-3
-        .row.justify-content-center.align-items-center.mb-4
-          .col-auto.my-lg-0.my-3
-            img.img-a.img-t(src='@/assets/curso/temas/19.svg', alt='')       
-          .col.my-lg-0.my-3
-            p.mb-0 Los arreglos, por ejemplo, son una de las estructuras más básicas y ampliamente utilizadas. Imaginemos un array como una fila de casilleros numerados: cada casillero puede contener un dato, y podemos acceder directamente a cualquier casillero conociendo su número. Esta estructura es ideal cuando conocemos de antemano el tamaño de nuestros datos y necesitamos acceder a elementos específicos rápidamente. 
+    Separador
 
-        .bg4.p-3  
-          pmb-0 Las listas enlazadas, por otro lado, son como una cadena de elementos donde cada uno conoce la ubicación del siguiente. Esta estructura es más flexible que los arreglos, ya que podemos agregar o eliminar elementos fácilmente, pero requiere más tiempo para encontrar un elemento específico, ya que debemos recorrer la lista desde el principio.  
-                                                   
-    p.mb-5 Los árboles y las hash tables son estructuras más complejas que nos permiten representar relaciones jerárquicas y conexiones entre datos. Estas estructuras son fundamentales en muchos algoritmos de inteligencia artificial, especialmente en áreas como el procesamiento del lenguaje natural y el análisis de redes sociales.
+    .titulo-segundo(data-aos="flip-up")
+      h2#t_1_2 1.2	Electrotecnia AC
+    
+    p(data-aos="fade-right") La corriente alterna, o AC (#[em #[strong Alternating Current]]), es un tipo de corriente en la que el flujo de electrones cambia de dirección de manera periódica. A diferencia de la corriente continua, en la cual los electrones se mueven en una sola dirección, la corriente alterna invierte su dirección varias veces por segundo (frecuencia), creando una forma de onda sinusoidal
 
-    .row.justify-content-center.mb-5.pb-3
-      .col-lg-5.my-lg-0.my-3
-        .bg5.brad.p-3.h-100.j1 
-          p.mb-0 La elección de la estructura de datos adecuada dependerá de varios factores, incluyendo el tipo de operaciones que necesitamos realizar con mayor frecuencia, el volumen de datos que manejaremos, y los requisitos de rendimiento de nuestra aplicación. Es importante recordar que no existe una estructura "perfecta" que sirva para todos los casos: cada una tiene sus propias ventajas y desventajas que debemos considerar cuidadosamente.    
-      .col-lg-3.my-lg-0.my-3
-        img.img-a.img-t(src='@/assets/curso/temas/20.png', alt='')      
-      .col-lg-4.my-lg-0.my-3
-        .bg6.brad.p-2.px-3.h-100.j1 
-          p.mb-0 Al desarrollar soluciones de inteligencia artificial, la comprensión profunda de estas estructuras de datos fundamentales nos permite diseñar sistemas más eficientes y escalables. Un buen diseño de datos desde el principio puede significar la diferencia entre un sistema que funciona adecuadamente y uno que se vuelve inmanejable a medida que crece el volumen de datos.
+    .cont_decorativo.mb-4.mt-5(data-aos="fade-right")
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/tema1/3.svg")
+        .col.ps-2(style="place-self:center;")
+          h3.mb-0.pe-4 Principales conceptos de electrotecnia AC
+    
+    TabsC.color-acento-contenido
+      .py-3.py-md-4(titulo="Voltaje Alterno (V)")
+        .row.p-4.col-xl-11.m-auto
+          .col-md-auto.d-none.d-lg-block(style="place-self:center;")
+            figure
+              img(src='@/assets/curso/tema1/11.svg')
+          .col-md(style="place-self:center;")
+            p.fw-bold Voltaje Alterno (V)
+            p El voltaje en un sistema AC varía con el tiempo y cambia de polaridad a una frecuencia determinada. Este cambio continuo en la dirección del voltaje permite la transmisión de energía a largas distancias. El voltaje se mide en voltios (V) y, en sistemas AC, suele expresarse en términos de #[strong valor eficaz (RMS)], que equivale al valor de corriente continua que produciría la misma potencia en una resistencia.
+      .py-3.py-md-4(titulo="Frecuencia (f)")
+        .row.p-4.col-xl-11.m-auto
+          .col-md-auto.d-none.d-lg-block(style="place-self:center;")
+            figure
+              img(src='@/assets/curso/tema1/11.svg')
+          .col-md(style="place-self:center;")
+            p.fw-bold Frecuencia (f)
+            p La frecuencia es el número de ciclos completos que la corriente alterna realiza en un segundo y se mide en #[strong hercios (Hz)]. La frecuencia estándar en la mayoría de los sistemas de distribución eléctrica es de 50 Hz (en Europa) o 60 Hz (en América).
+      .py-3.py-md-4(titulo="Corriente Alterna (I)")
+        .row.p-4.col-xl-11.m-auto
+          .col-md-auto.d-none.d-lg-block(style="place-self:center;")
+            figure
+              img(src='@/assets/curso/tema1/11.svg')
+          .col-md(style="place-self:center;")
+            p.fw-bold Corriente Alterna (I)
+            p La corriente en sistemas AC varía de acuerdo con el voltaje y sigue la misma forma de onda sinusoidal. La magnitud de la corriente alterna cambia constantemente, por lo que también suele expresarse en su valor eficaz (RMS) al realizar cálculos.
+      .py-3.py-md-4(titulo="Impedancia (Z)")
+        .row.p-4.col-xl-11.m-auto
+          .col-md-auto.d-none.d-lg-block(style="place-self:center;")
+            figure
+              img(src='@/assets/curso/tema1/11.svg')
+          .col-md(style="place-self:center;")
+            p.fw-bold Impedancia (Z)
+            p La impedancia es la oposición total al flujo de corriente en un circuito AC y depende de la resistencia (R), la inductancia (L) y la capacitancia (C) del circuito. Se mide en #[strong ohmios (Ω)] y afecta la magnitud y la fase de la corriente en relación con el voltaje.
+      .py-3.py-md-4(titulo="Potencia en AC")
+        .row.p-4.col-xl-11.m-auto
+          .col-md-auto.d-none.d-lg-block(style="place-self:center;")
+            figure
+              img(src='@/assets/curso/tema1/11.svg')
+          .col-md(style="place-self:center;")
+            p.fw-bold Potencia en AC
+            p La potencia en corriente alterna tiene tres componentes:
+            ul.lista-ul
+              li.d-flex
+                i.fas.fa-check-circle(style="color:#78B62E;")
+                span #[strong Potencia Activa (P):] es la energía útil que se convierte en trabajo. Se mide en vatios (W).
+              li.d-flex
+                i.fas.fa-check-circle(style="color:#78B62E;")
+                span #[strong Potencia Reactiva (Q):] es la energía que se almacena temporalmente en elementos inductivos o capacitivos y se mide en voltamperios reactivos (VAR).
+              li.d-flex
+                i.fas.fa-check-circle(style="color:#78B62E;")
+                span #[strong Potencia Aparente (S):] es la combinación de la potencia activa y reactiva y se mide en voltamperios (VA).
+    
+    .cont_1_2
+      .cont_decorativo.mb-4.mt-5(data-aos="fade-right")
+        .row
+          .col-auto.pe-0
+            figure
+              img(src="@/assets/curso/tema1/3.svg")
+          .col.ps-2(style="place-self:center;")
+            h3.mb-0.pe-4 Leyes fundamentales en electrotecnia AC
+      
+      .row
+        .col-lg.mb-4.mb-lg-0(data-aos="zoom-in")
+          .bg-white.p-4.h-100(style="box-shadow:0px 4px 20px rgba(0,0,0,.1);border-radius:14px;")
+            figure.mb-3
+              img(src="@/assets/curso/tema1/12.svg" style="max-width:76px;")
+            h5 Ley de Ohm en AC
+            p Se aplica en circuitos AC, aunque con algunas diferencias debido a la presencia de reactancia inductiva y capacitiva. En un circuito AC:
+            p.fw-bold V = I × Z
+            p.mb-0.fw-bold Donde:
+            p.mb-0 #[strong V] es el voltaje
+            p.mb-0 #[strong I] es la corriente
+            p.mb-0 #[strong Z] es la impedancia
+        .col-lg.mb-4.mb-lg-0(data-aos="zoom-in")
+          .bg-white.p-4.h-100(style="box-shadow:0px 4px 20px rgba(0,0,0,.1);border-radius:14px;")
+            figure.mb-3
+              img(src="@/assets/curso/tema1/13.svg" style="max-width:76px;")
+            h5 Leyes de Kirchhoff
+            p Para corriente y voltaje se aplican también en circuitos AC, teniendo en cuenta las magnitudes y fases de las ondas sinusoidales. Estas leyes son esenciales para el análisis de circuitos complejos en sistemas de corriente alterna.
+    
+      .cont_decorativo.mb-4.mt-5(data-aos="fade-right")
+        .row
+          .col-auto.pe-0
+            figure
+              img(src="@/assets/curso/tema1/3.svg")
+          .col.ps-2(style="place-self:center;")
+            h3.mb-0.pe-4 Aportes de la electrotecnia AC
+      
+      p(data-aos="fade-right") La electrotecnia AC ha sido fundamental para el desarrollo y expansión de la infraestructura eléctrica mundial. Algunos de sus principales aportes son:
 
-    .row.justify-content-start.mb-5
-      .col-auto
-        .list
-          .list__item
-            .list__item__icon
-              img.ms-2(src='@/assets/curso/temas/icon.svg' alt='')
-          .list__txt.bgicon.brad.p-0.px-4.text-white
-            h4.mb-0 Aplicaciones reales de estructuras de datos en la industria
+      .row.mt-4
+        .col-lg-auto.d-none.d-lg-block(data-aos="fade-right")
+          figure
+            img(src="@/assets/curso/tema1/14.png")
+        .col-lg(data-aos="fade-left")
+          AccordionRED(tipo="a" clase-tarjeta="tarjeta")
+            .row.col-xl-11.m-auto(titulo="Transmisión de energía a largas distancias")
+              p La capacidad de cambiar la magnitud del voltaje mediante transformadores facilita la transmisión eficiente de energía en redes eléctricas de larga distancia.
+            .row.col-xl-11.m-auto(titulo="Estandarización de sistemas de energía")
+              p La generación y distribución de energía AC permite estandarizar los sistemas eléctricos domésticos e industriales.
+            .row.col-xl-11.m-auto(titulo="Eficiencia en grandes sistemas eléctricos")
+              p Los sistemas AC son altamente eficientes para suministrar energía a dispositivos de gran potencia en entornos industriales, como motores y sistemas de calefacción.
+            .row.col-xl-11.m-auto(titulo="Versatilidad en el uso de transformadores")
+              p La corriente alterna permite el uso de transformadores para ajustar los niveles de voltaje según las necesidades específicas, reduciendo pérdidas de energía.
 
-    .row.bg9.align-items-center
-      .col-lg-12.col-12.px-lg-5.px-4
-        .row.justify-content-center.align-items-center          
-          .col-lg-12
-            .bgw.brad.p-5.my-5
-              CarouselRED(tipo="b")
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 Arreglos: uso en la industria
-                    p Los arreglos se utilizan en industrias que requieren acceso rápido a datos secuenciales, como en sistemas de procesamiento de pagos o monitoreo de inventarios en tiempo real. 
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/21.png', alt='')                              
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 Arreglos en procesamiento de pagos
-                    p En sistemas de pago, los arreglos permiten almacenar y acceder rápidamente a transacciones o registros de clientes por ID de manera eficiente. 
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/22.png', alt='') 
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 Listas enlazadas: uso en la industria
-                    p Las listas enlazadas son útiles en aplicaciones donde los datos cambian frecuentemente, como en bases de datos dinámicas y sistemas de gestión de tareas. 
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/23.png', alt='') 
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 Listas enlazadas en bases de datos dinámicas
-                    p Las listas enlazadas permiten la inserción y eliminación rápida de registros, como en aplicaciones de bases de datos de clientes donde los datos están en constante cambio.
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/24.png', alt='') 
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 Árboles: uso en la industria
-                    p Los árboles se utilizan en aplicaciones que requieren organizar datos jerárquicos, como en la gestión de archivos o en algoritmos de búsqueda.
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/25.png', alt='') 
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 Árboles en gestión de archivos
-                    p Los árboles permiten organizar directorios y archivos de manera eficiente, facilitando el acceso rápido a documentos en sistemas de almacenamiento.
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/26.png', alt='')                              
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 #[i Hash tables]: uso en la industria
-                    p Las tablas #[i hash] son fundamentales en aplicaciones que requieren búsqueda rápida por clave, como en sistemas de caché o diccionarios electrónicos.
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/27.png', alt='') 
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 #[i Hash ]tables en caché y diccionarios
-                    p Se usan en sistemas de caché de alto rendimiento y en diccionarios electrónicos para almacenar y buscar rápidamente valores asociados a claves.
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/28.png', alt='') 
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 Elección de la estructura adecuada
-                    p La elección de la estructura de datos depende de factores como el tipo de operación, el volumen de datos y los requisitos de rendimiento. No hay una solución única.
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/29.png', alt='') 
-                .row.justify-content-center
-                  .col-lg-6.my-2
-                    h5.mb-4 Resumen
-                    ul.lista-ul.fa-ul
-                      li 
-                        i.fas.fa-check-circle.color1
-                        span Arreglos: uso en datos secuenciales y accesos rápidos.
-                      li 
-                        i.fas.fa-check-circle.color1
-                        span Listas enlazadas: adecuadas para datos dinámicos.
-                      li 
-                        i.fas.fa-check-circle.color1
-                        span Árboles: útiles para organizar datos jerárquicos.
-                      li 
-                        i.fas.fa-check-circle.color1
-                        span Hash tables: eficaces para búsquedas rápidas por clave.                    
-                    p La selección de la estructura correcta optimiza el rendimiento según el caso de uso.
-                  .col-lg-5.my-2 
-                    img.img-a.img-t(src='@/assets/curso/temas/30.png', alt='')                                                                                                                                    
+    .cont_decorativo.mb-4.mt-5(data-aos="fade-right")
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/tema1/3.svg")
+        .col.ps-2(style="place-self:center;")
+          h3.mb-0.pe-4 Usos de la electrotcnia AC
+    
+    p(data-aos="fade-right") La corriente alterna se utiliza en una amplia variedad de aplicaciones gracias a su capacidad de transmisión eficiente y su adaptabilidad. Algunas de las aplicaciones más importantes son:
+
+    .row.mt-4
+      .col-lg(data-aos="fade-right")
+        .h-100.p-3.p-lg-4(style="background-color:#01B9D1;border-radius:10px;")
+          ul.lista-ul.mb-0
+            li.d-flex.bg-white.p-2(style="border-radius:4px;")
+              i.fas.fa-check-circle(style="color:#78B62E;")
+              span #[strong Redes de suministro eléctrico:] la mayoría de los sistemas de generación y distribución de energía en todo el mundo funcionan con corriente alterna, debido a la facilidad para aumentar o disminuir el voltaje con transformadores.
+            li.d-flex.bg-white.p-2(style="border-radius:4px;")
+              i.fas.fa-check-circle(style="color:#78B62E;")
+              span #[strong Motores eléctricos de inducción:] los motores de inducción, que son esenciales en la industria, funcionan con corriente alterna y se utilizan en máquinas, herramientas, sistemas de ventilación y refrigeración, y otros equipos industriales.
+            li.d-flex.bg-white.p-2(style="border-radius:4px;")
+              i.fas.fa-check-circle(style="color:#78B62E;")
+              span #[strong Electrodomésticos:] la mayoría de los electrodomésticos, como refrigeradores, lavadoras, hornos y aires acondicionados, funcionan con corriente alterna debido a su conexión directa con la red de suministro eléctrico.
+            li.d-flex.bg-white.p-2.mb-0(style="border-radius:4px;")
+              i.fas.fa-check-circle(style="color:#78B62E;")
+              span #[strong Transformadores de potencia:] los transformadores permiten ajustar el voltaje de la corriente alterna para facilitar su transmisión y distribución. Esta tecnología es esencial para minimizar las pérdidas de energía en largas distancias.
+      .col-lg-auto.d-none.d-lg-block(data-aos="fade-left")
+        figure
+          img(src="@/assets/curso/tema1/15.png")
+    
+    .row.mt-5
+      .col-lg-4.d-none.d-lg-block(data-aos="fade-right")
+        figure
+          img(src="@/assets/curso/tema1/16.png")
+      .col-lg-8(data-aos="fade-left")
+        .titulo-sexto.color-acento-contenido
+          h5 Tabla 2.
+          span Ejemplos de circuitos electrotecnia AC.
+        .p-3(style="background-color:#78B62E;")
+          p.mb-0.fw-bold Ejemplos de Circuitos Básicos en Electrotecnia AC
+          p.mb-0 se recomienda utilizar simuladores en línea, como #[em #[strong Tinkercad Circuits]] o #[em #[strong Falstad Circuit Simulator]], y experimentar con los siguientes circuitos:
+        .tabla-a.color-acento-botones
+          table
+            caption.fw-normal Fuente: OIT, 2024.
+            tbody
+              tr(style="background-color:#F6F6F6;")
+                td.text-center.fw-bold(style="width:30%;border-right:1px #AFAFAF solid;") Circuito RC (Resistor-Capacitor)
+                td(style="border:0;") Conecta una resistencia y un capacitor en serie en un circuito AC para observar cómo afecta la capacitancia a la fase y magnitud de la corriente.
+              tr(style="background-color:#fff;")
+                td.text-center.fw-bold(style="border-right:1px #AFAFAF solid;") Circuito RL (Resistor-Inductor)
+                td(style="border:0;") Conecta una resistencia y una bobina en serie en un circuito AC para explorar el efecto de la inductancia en el retraso de fase entre voltaje y corriente.
+              tr(style="background-color:#F6F6F6;")
+                td.text-center.fw-bold(style="border-right:1px #AFAFAF solid;") Circuito RLC (Resistor-Inductor-Capacitor)
+                td(style="border:0;") Combina un resistor, un inductor y un capacitor para crear un circuito resonante. Observa la resonancia cuando la frecuencia de la fuente AC coincide con la frecuencia natural del circuito.
+    
+    .titulo-sexto.color-acento-contenido.mt-5(data-aos="fade-down")
+      h5 Figura 1.
+      span Electrotecnia
+    .p-3.p-lg-4(style="background-color:#E8E8E8;")
+      figure(data-aos="fade-up")
+        img(src="@/assets/curso/tema1/17.svg" alt="La Figura 1. se denomina «Electrotecnia DC». Muestra un mapa conceptual sobre “Electrotecnia DC” que se ramifica en cinco secciones principales: introducción, fundamentos, componentes, aplicaciones, y ventajas y desventajas. Cada rama incluye subtemas específicos relacionados con conceptos y elementos de la corriente continua. Se adjunta link, para su mejor observación: https://www.mindomo.com/mindmap/6a5386c826f24eea8b5e3201b017587f")
+
+                                                                                                                                      
 </template>
 
 <script>
